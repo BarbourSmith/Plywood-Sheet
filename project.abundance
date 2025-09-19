@@ -4,12 +4,173 @@
     "x": 0,
     "y": 0,
     "uniqueID": "869d0ab8-6594-4dc7-b527-feade96f3902",
-    "ioValues": [],
+    "ioValues": [
+        {
+            "name": "Thickness",
+            "ioValue": 18,
+            "currentEquation": null
+        }
+    ],
     "topLevel": true,
-    "allAtoms": [],
-    "allConnectors": [],
+    "allAtoms": [
+        {
+            "atomType": "Output",
+            "name": "Output",
+            "x": 0.98,
+            "y": 0.5,
+            "uniqueID": "bc3c659f-0386-4120-bb68-6a5c8a9aa2da",
+            "ioValues": [
+                {
+                    "name": "number or geometry",
+                    "ioValue": "24359abc-95dd-4b33-8fec-22dbc458f651",
+                    "currentEquation": null
+                }
+            ]
+        },
+        {
+            "atomType": "Rectangle",
+            "name": "Rectangle",
+            "x": 0.12764550264550265,
+            "y": 0.3203342618384401,
+            "uniqueID": "7e40b11b-c124-4f7c-99fd-70f08a5f8500",
+            "ioValues": [
+                {
+                    "name": "x length",
+                    "ioValue": 2438.3999999999996,
+                    "currentEquation": "96*25.4"
+                },
+                {
+                    "name": "y length",
+                    "ioValue": 1219.1999999999998,
+                    "currentEquation": "48*25.4"
+                }
+            ]
+        },
+        {
+            "atomType": "Extrude",
+            "name": "Extrude",
+            "x": 0.2757936507936508,
+            "y": 0.2924791086350975,
+            "uniqueID": "cc975d31-fe1e-437f-a304-4be21bda1d97",
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "7e40b11b-c124-4f7c-99fd-70f08a5f8500",
+                    "currentEquation": null
+                },
+                {
+                    "name": "height",
+                    "ioValue": 18,
+                    "currentEquation": null
+                }
+            ]
+        },
+        {
+            "atomType": "Color",
+            "name": "Color",
+            "x": 0.4027777777777778,
+            "y": 0.2256267409470752,
+            "uniqueID": "039bc4f4-8fb3-4ea8-b3f1-eb5ec5cce262",
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "cc975d31-fe1e-437f-a304-4be21bda1d97",
+                    "currentEquation": null
+                }
+            ],
+            "selectedColorIndex": 17
+        },
+        {
+            "atomType": "Add-BOM-Tag",
+            "name": "Add BOM Tag",
+            "x": 0.6031746031746031,
+            "y": 0.5598885793871866,
+            "uniqueID": "24359abc-95dd-4b33-8fec-22dbc458f651",
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "039bc4f4-8fb3-4ea8-b3f1-eb5ec5cce262",
+                    "currentEquation": null
+                },
+                {
+                    "name": "Item Name",
+                    "ioValue": "New Item",
+                    "currentEquation": null
+                },
+                {
+                    "name": "Number Needed",
+                    "ioValue": 1,
+                    "currentEquation": null
+                },
+                {
+                    "name": "Cost (USD)",
+                    "ioValue": 0,
+                    "currentEquation": null
+                },
+                {
+                    "name": "Source Link",
+                    "ioValue": "",
+                    "currentEquation": null
+                }
+            ],
+            "BOMitem": {
+                "BOMitemName": "name",
+                "numberNeeded": 1,
+                "costUSD": 0,
+                "source": "www.example.com"
+            }
+        },
+        {
+            "atomType": "Input",
+            "name": "Thickness",
+            "x": 0.029699999999999997,
+            "y": 0.713091922005571,
+            "uniqueID": "fafc3e24-d9f3-44ac-a3e9-c8cfbb155319",
+            "ioValues": [],
+            "type": "number"
+        }
+    ],
+    "allConnectors": [
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap1ID": "7e40b11b-c124-4f7c-99fd-70f08a5f8500",
+            "ap2ID": "cc975d31-fe1e-437f-a304-4be21bda1d97"
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap1ID": "cc975d31-fe1e-437f-a304-4be21bda1d97",
+            "ap2ID": "039bc4f4-8fb3-4ea8-b3f1-eb5ec5cce262"
+        },
+        {
+            "ap1Name": "color",
+            "ap2Name": "geometry",
+            "ap1ID": "039bc4f4-8fb3-4ea8-b3f1-eb5ec5cce262",
+            "ap2ID": "24359abc-95dd-4b33-8fec-22dbc458f651"
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "number or geometry",
+            "ap1ID": "24359abc-95dd-4b33-8fec-22dbc458f651",
+            "ap2ID": "bc3c659f-0386-4120-bb68-6a5c8a9aa2da"
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "height",
+            "ap1ID": "fafc3e24-d9f3-44ac-a3e9-c8cfbb155319",
+            "ap2ID": "cc975d31-fe1e-437f-a304-4be21bda1d97"
+        }
+    ],
     "unitsKey": "MM",
     "fileTypeVersion": 1,
-    "compiledBom": {},
+    "compiledBom": [
+        {
+            "BOMitemName": "name",
+            "numberNeeded": 1,
+            "costUSD": 0,
+            "source": "www.example.com"
+        }
+    ],
     "filetypeVersion": 1
 }

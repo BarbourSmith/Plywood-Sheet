@@ -2,3 +2,7 @@
 # Bill Of Materials 
  |Part|Number Needed|Price|Source| 
  |----|----------|-----|-----|
+|name|1|$0|www.example.com|
+|Total: |1|$0| |
+
+ 3xCOG MSRP: $0.00
