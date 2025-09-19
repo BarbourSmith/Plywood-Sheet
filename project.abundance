@@ -1,0 +1,15 @@
+{
+    "atomType": "Molecule",
+    "name": "Plywood Sheet",
+    "x": 0,
+    "y": 0,
+    "uniqueID": "869d0ab8-6594-4dc7-b527-feade96f3902",
+    "ioValues": [],
+    "topLevel": true,
+    "allAtoms": [],
+    "allConnectors": [],
+    "unitsKey": "MM",
+    "fileTypeVersion": 1,
+    "compiledBom": {},
+    "filetypeVersion": 1
+}
